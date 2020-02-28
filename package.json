@@ -1,0 +1,41 @@
+{
+  "name": "CurrencyExchangeRate",
+  "version": "1.0.0",
+  "description": "use react/redux to interact with a currency exchange API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhu32/CurrencyExchangeRate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhu32/CurrencyExchangeRate/issues"
+  },
+  "homepage": "https://github.com/jhu32/CurrencyExchangeRate#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.6",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/runtime": "^7.8.4",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  }
+}
