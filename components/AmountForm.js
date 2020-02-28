@@ -46,11 +46,11 @@ class AmountForm extends Component {
 
   render() {
     return (
-      <div id="wrapper">
-      <h1>Currency Exchange Rate Calculator!</h1>
-      <h2>All data taken from the <a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">European Central Bank</a></h2>
+      <div className="splash" id="wrapper">
+      <h1 className="splash-head">Currency Exchange Rate Calculator!</h1>
+      <h2 className="splash-subhead">All data taken from the <a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">European Central Bank</a></h2>
       <form onSubmit={this.handleSubmit}>
-        <label htmlFor="start_currency">Starting Currency: </label>
+        <label className="splash-subhead" htmlFor="start_currency">Starting Currency: </label>
         <select id="start_currency">
             <option value="USD">US Dollars</option>
             <option value="EUR">Euros</option>
@@ -70,7 +70,7 @@ class AmountForm extends Component {
           onChange={this.handleChange}
         />
         <br />
-        <label htmlFor="end_currency">Ending Currency: </label>
+        <label className="splash-subhead" htmlFor="end_currency">Ending Currency: </label>
         <select id="end_currency">
             <option value="USD">US Dollars</option>
             <option value="EUR">Euros</option>
@@ -84,7 +84,7 @@ class AmountForm extends Component {
         <br />
         <input type="submit"></input>
       </form>
-    {this.state.startingcurrency ? <div id="exchange rate information"><h3>The exchange rate between {this.state.startingcurrency} and {this.state.endingcurrency} is: {this.state.exchangeRate}</h3> <h3>You will have a total of {Math.round(this.state.value*this.state.exchangeRate*100)/100} {this.state.endingcurrency} after conversion.</h3></div> : false}
+    {this.state.startingcurrency ? <div id="exchange rate information"><h3 className="splash-subhead">The exchange rate between {this.state.startingcurrency} and {this.state.endingcurrency} is: {this.state.exchangeRate}</h3> <h3 className="splash-subhead">You will have a total of {Math.round(this.state.value*this.state.exchangeRate*100)/100} {this.state.endingcurrency} after conversion.</h3></div> : false}
       </div>
     );
   }
